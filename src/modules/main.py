@@ -10,6 +10,9 @@ w = observation.weather
 
 temp = w.temperature('celsius')['temp']
 
+print("In " + place + " now " + w.detailed_status)
+print("The temperature now is about " + str(temp))
+
 if temp < 10:
     print('It is very cold outside, you would better put something warm on you')
 elif temp < 20:
